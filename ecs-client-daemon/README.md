@@ -3,8 +3,8 @@ This example runs Wiretrustee client configured as a daemon set in ECS.
 
 This allows you to:
 
-* Connect to EC2 running on private subnets without the need to open firewall rules or configure bastion servers. 
-* Have other internal services that are part of your Wiretrustee network accessible through this solution.
+* Connect to EC2 running on private subnets without the need to open firewall rules or configure bastion servers
+* Access other services running anywhere and connected to your Wiretrustee network
 
 ## Requirements
 * Terraform > 1.0
