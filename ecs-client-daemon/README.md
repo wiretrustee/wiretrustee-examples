@@ -1,5 +1,10 @@
 # Wiretrustee client on ECS running as daemon on every EC2 instance
-This example allows you to test Wiretrustee client configured as a daemon set in ECS. This allows you to connect to EC2 running on private subnets without the need to open firewall rules or configure bastion servers.
+This example runs Wiretrustee client configured as a daemon set in ECS. 
+
+This allows you to:
+
+* Connect to EC2 running on private subnets without the need to open firewall rules or configure bastion servers. 
+* Have other internal services that are part of your Wiretrustee network accessible through this solution.
 
 ## Requirements
 * Terraform > 1.0
