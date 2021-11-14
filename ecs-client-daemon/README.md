@@ -1,15 +1,15 @@
-# Wiretrustee client on ECS running as daemon on every EC2 instance
+# Wiretrustee client on ECS running as a daemon service on every EC2 instance (Terraform)
 This example runs Wiretrustee client configured as a daemon set in ECS. 
 
 This allows you to:
 
 * Connect to EC2 running on private subnets without the need to open firewall rules or configure bastion servers
-* Access other services running anywhere and connected to your Wiretrustee network
+* Access other services connected to your Wiretrustee network and running anywhere.
 
 ## Requirements
 * Terraform > 1.0
-* An Wiretrustee account with a Setup Key
-* Another Wiretrustee client in your network to validate the connection. (possibly the same node you are running the example)
+* A Wiretrustee account with a Setup Key
+* Another Wiretrustee client in your network to validate the connection (possibly your laptop or a machine you are running this example on).
 * The [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) installed.
 * An [AWS account](https://aws.amazon.com/free/)
 * Your AWS credentials. You can [create a new Access Key on this page](https://console.aws.amazon.com/iam/home?#/security_credentials)
@@ -18,9 +18,9 @@ This allows you to:
 
 ## Getting started
 
-Clone this repository and download and install Terraform following the guide [here](https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/aws-get-started).
+Clone this repository, download, and install Terraform following the guide [here](https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/aws-get-started).
 
-Login to https://app.wiretrustee.com and [add a new Peer](https://app.wiretrustee.com/add-peer), once you are done with the steps described there, copy your [Setup key](https://app.wiretrustee.com/setup-keys).
+Login to https://app.wiretrustee.com and [add your machine as a peer](https://app.wiretrustee.com/add-peer), once you are done with the steps described there, copy your [Setup key](https://app.wiretrustee.com/setup-keys).
 
 Using a text editor, edit the [variables.tf](variables.tf) file, and update the `wt_setup_key` variable with your setup key. Also, make sure that `ssh_public_key_path` variable is pointing to the correct public key path. If necessary, update the remaining variables according to your requirements and their descriptions.
 
