@@ -8,6 +8,8 @@ This example allows you to test Wiretrustee client configured as a daemon set in
 * The [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) installed.
 * An [AWS account](https://aws.amazon.com/free/)
 * Your AWS credentials. You can [create a new Access Key on this page](https://console.aws.amazon.com/iam/home?#/security_credentials)
+## Notice
+> Before getting started with this example, be aware that creating the resources from it may incur charges from AWS.
 
 ## Getting started
 
@@ -47,6 +49,7 @@ sudo docker ps
 ```
 
 ### Deleting the infrastructure resources used in the example
+Once you are done validating the example, you can remove the resources with the following steps:
 1. Run terraform plan with the flag `-destroy`
 ```shell
 terraform plan -out plan.tf -destroy
