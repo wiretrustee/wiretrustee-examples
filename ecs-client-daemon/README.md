@@ -17,9 +17,9 @@ Clone this repository and download and install Terraform following the guide [he
 
 Login to https://app.wiretrustee.com and [add a new Peer](https://app.wiretrustee.com/add-peer), once you are done with the steps described there, copy your [Setup key](https://app.wiretrustee.com/setup-keys).
 
-Using a text editor, edit the variables.tf file, and update the `wt_setup_key` variable with your setup key. Also, make sure that `ssh_public_key_path` variable is pointing to the correct public key path. If necessary, update the remaining variables according to your requirements.
+Using a text editor, edit the [variables.tf](variables.tf) file, and update the `wt_setup_key` variable with your setup key. Also, make sure that `ssh_public_key_path` variable is pointing to the correct public key path. If necessary, update the remaining variables according to your requirements and their descriptions.
 
-Before continuing, you may also update the provider.tf to configure proper AWS region and default tags.
+Before continuing, you may also update the [provider.tf](provider.tf) to configure proper AWS region and default tags.
 
 ### Creating the resources with Terraform
 Follow the steps below to run terraform and create your test environment:
