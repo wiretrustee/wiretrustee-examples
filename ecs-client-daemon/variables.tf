@@ -15,7 +15,7 @@ variable "wt_setup_key" {
 }
 
 variable "docker_image" {
-  default = "wiretrustee/wiretrustee:0.2.3-SNAPSHOT-95ef854-amd64"
+  default = "wiretrustee/wiretrustee:latest"
   description = "Wiretrustee's client docker image. Must support environment variables"
 }
 
