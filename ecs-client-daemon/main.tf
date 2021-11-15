@@ -41,7 +41,7 @@ resource "aws_ecs_task_definition" "wiretrustee" {
   container_definitions = jsonencode([
     {
       name      = var.name
-      image     = "wiretrustee/wiretrustee:0.2.3-SNAPSHOT-95ef854-amd64"
+      image     = "wiretrustee/wiretrustee:latest"
       essential = true
       memoryReservation = 64
       privileged = true
