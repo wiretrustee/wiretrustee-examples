@@ -1,8 +1,22 @@
 # Wiretrustee client on ECS running as a daemon service on every EC2 instance (Terraform)
-This example runs Wiretrustee client configured as a daemon set in ECS. 
+A common way to run containers in the AWS cloud is to use the service Elastic Container Service, which is a fully managed container orchestration service that makes it easy to deploy, manage, and scale containerized applications. It is best practice and common to run this infrastructure behind security guardrails like, strict security groups and private subnets.
+
+Also, a routine for many System's administrators and Developers, is to connect to servers that run their company's software in order to troubleshoot, validate output and even install dependecies, and if you have your systems running in a secure network, you got a few options to allow communications to hosts in that private network:
+* Add a [bastion host](https://en.wikipedia.org/wiki/Bastion_host) or [jump server](https://en.wikipedia.org/wiki/Jump_server)
+* Connect a [site-2-site](https://en.wikipedia.org/wiki/Virtual_private_network#Types) VPN
+* [Remote access](https://en.wikipedia.org/wiki/Virtual_private_network#Types) VPN
+* Allow IP(s) address in the server's security group
+
+All these options are valid and proved to work over the years, but they come with some costs that in short to mid term you start to deal with:
+* Hard implementation
+* Fragil firewall configuration
+* Yet, another server to secure and maintain
+
+In this example we will run Wiretrustee client configured as a daemon set in ECS. 
 
 This allows you to:
 
+* Run Wiretrustee as an ECS native service, you can manage and maintain it the same way you do with your other services
 * Connect to EC2 running on private subnets without the need to open firewall rules or configure bastion servers
 * Access other services connected to your Wiretrustee network and running anywhere.
 
