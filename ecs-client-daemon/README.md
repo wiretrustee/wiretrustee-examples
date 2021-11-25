@@ -1,4 +1,7 @@
 # Wiretrustee client on ECS running as a daemon service on every EC2 instance (Terraform)
+
+See [docs.wiretrustee.com](https://docs.wiretrustee.com/examples/aws-ecs-client-daemon)
+
 A common way to run containers in the AWS cloud is to use the service Elastic Container Service, which is a fully managed container orchestration service that makes it easy to deploy, manage, and scale containerized applications. It is best practice and common to run this infrastructure behind security guardrails like strict security groups and private subnets.
 
 Also, a routine for many System's administrators and Developers, is to connect to servers that run their company's software in order to troubleshoot, validate output and even install dependencies, and if you have your systems running in a secure network, you got a few options to allow communications to hosts in that private network:
